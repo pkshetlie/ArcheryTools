@@ -8,9 +8,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="crazybowmen.fr.archerytools.SponsorsActivity$PlaceholderFragment">
 
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/visit_our_sponsors"
+                    android:id="@+id/visit_our_sponsors_txt"
+                    android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+            android:layout_width="173dp"
+            android:layout_height="82dp"
+            android:id="@+id/flanders_archerie_img_btn"
+            android:background="@mipmap/flandersarchery"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageButton
+                    android:layout_width="173dp"
+                    android:layout_height="173dp"
+                    android:id="@+id/star_archerie_img_btn"
+                    android:background="@mipmap/star_archerie"
+                    android:layout_below="@+id/flanders_archerie_img_btn"
+                    android:layout_alignRight="@+id/visit_our_sponsors_txt"
+                    android:layout_alignEnd="@+id/visit_our_sponsors_txt"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
 
 </RelativeLayout>
